@@ -1,0 +1,3 @@
+curl -c cookies.txt -b cookies.txt -k https://www.space-track.org/ajaxauth/login -d 'identity=johnnyclem@gmail.com&password=WRr-yhu-bm3-96d'
+
+curl --limit-rate 100K --cookie cookies.txt https://www.space-track.org/basicspacedata/query/class/tle/format/tle/NORAD_CAT_ID/25544/orderby/EPOCH%20desc/limit/5 > passes.json
